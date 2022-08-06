@@ -1,2 +1,3 @@
 - 00_space
-    - <00_workplace_a1MujocoTrajectoryTrackingMPC> Unitree A1 using diff. car model to do the model based control using MPC and simulation in the MuJoCo. Before this iteration, the MPC has a tracking problem that is “ref” and “actual” curve not coincide together. the main problem is the limitation of the controls’ up and low boundary. the small rang of this boundary will increase the computation time and cause system control unstable (since small range means few choose for the optimizer and optimizer always exhaust to the limits). to solve this, i increase the range of the controls’ boundary then add a Kp gain inside the final controller to regulate the controls back to physical ground contact allowed range, and it solve the tracking problem.
+    - <00_workplace_a1MujocoTrajectoryTrackingMPC>: solve the mpc tracking problem
+    - <01_workplace_mpcFromMacToLinux>: diff. car numerical model mpc tracking using pranav’s “8” curve trajectory.
