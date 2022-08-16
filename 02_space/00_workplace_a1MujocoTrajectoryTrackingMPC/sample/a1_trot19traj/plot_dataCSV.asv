@@ -1,0 +1,22 @@
+clc
+clear all
+close all
+
+data = readtable('data.csv');
+% time = data.t;
+% speed = data.NlopyStepSolveTime;
+x = data.WorldPosX;
+y = data.WorldPosY;
+theta = data.yaw;
+xref = data.referenceX;
+yref = data.referenceY;
+thetaref = data.referenceTheta;
+% figure(1)
+% plot(x, y,"LineWidth",3,"LineStyle","-"); hold on
+% plot(xref, yref,"LineWidth",3)
+% legend("actual", "reference")
+% figure(2)
+plot(400:length(theta), theta(400:end)); hold on
+plot(400:length(theta), theta(400:end))
+axis([400 length(theta) 0.5 2])
+
