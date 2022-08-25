@@ -6,3 +6,4 @@
 - 02_space
     - <00_workplace_a1MujocoTrajectoryTrackingMPC>: add yaw control feature
     - <08_workplace_a1HardWare>: A1 hardware testing, chunming's linux as the payload computer
+    - ß
