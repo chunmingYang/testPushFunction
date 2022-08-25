@@ -1,0 +1,4 @@
+printf '\033c'
+rm a1
+gcc a1_main.c a1_d.c a1_s.c a1lib.c -Wno-implicit-function-declaration -lm -o a1
+./a1
